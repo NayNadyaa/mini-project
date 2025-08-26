@@ -1,0 +1,54 @@
+<div class="list-container">
+    <p-toast />
+    <div class="card">
+
+    <p-table
+        [value]="employees"
+        [paginator]="true"
+        [rows]="5"
+        [rowsPerPageOptions]="rowsPerPageOptions"
+        responsiveLayout="scroll"
+        size="small"
+        [tableStyle]="{'min-width':'50rem'}"
+    >
+        <ng-template pTemplate="caption">
+            <div class="flex items-center justify-content-between">
+                <span class="text-xl font-bold mt-2">Employee List</span>
+                <p-button label="Add employee" size="small" raised />
+            </div>
+        </ng-template>
+
+        <ng-template pTemplate="header">
+        <tr>
+            <th>Username</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Birth Date</th>
+            <th>Basic Salary</th>
+            <th>Status</th>
+            <th>Group</th>
+            <th>Description</th>
+            <th>Action</th>
+        </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-employee>
+        <tr>
+            <td>{{ employee.username }}</td>
+            <td>{{ employee.firstName }}</td>
+            <td>{{ employee.lastName }}</td>
+            <td>{{ employee.email }}</td>
+            <td>{{ employee.birthDate | date }}</td>
+            <td>{{ employee.basicSalary | currency:'USD' }}</td>
+            <td>{{ employee.status }}</td>
+            <td>{{ employee.group }}</td>
+            <td>{{ employee.description }}</td>
+            <td>
+                <p-button class="mr-1" icon="pi pi-pencil" (click)="editData(employee)" rounded />
+                <p-button icon="pi pi-trash" (click)="deleteData(employee)" rounded />
+            </td>
+        </tr>
+        </ng-template>
+    </p-table>
+    </div>
+</div>

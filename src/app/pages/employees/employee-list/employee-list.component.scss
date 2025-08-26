@@ -1,0 +1,50 @@
+.list-container {
+    display: flex;
+    padding: auto;
+}
+
+:host ::ng-deep .p-datatable {
+  font-size: 13px;  
+}
+
+:host ::ng-deep .p-datatable .p-datatable-thead > tr > th {
+  padding: 6px 10px; 
+}
+
+:host ::ng-deep .p-datatable .p-datatable-tbody > tr > td {
+  padding: 6px 10px; 
+}
+
+:host ::ng-deep .p-paginator {
+  font-size: 12px;
+  padding: 0.25rem; 
+}
+
+:host ::ng-deep .p-paginator .p-dropdown {
+  font-size: 12px;
+  height: 28px;
+}
+
+:host ::ng-deep .p-paginator .p-dropdown-label {
+  padding: 2px 8px;
+  font-size: 12px;
+}
+
+:host ::ng-deep .p-paginator .p-paginator-pages .p-paginator-page {
+  min-width: 26px;  
+  height: 26px;
+  font-size: 12px;
+}
+
+:host ::ng-deep .p-paginator .p-paginator-next,
+:host ::ng-deep .p-paginator .p-paginator-prev {
+  min-width: 26px;
+  height: 26px;
+}
+
+/* Panel dropdown */
+:host ::ng-deep .p-dropdown-panel { font-size: 12px; }
+:host ::ng-deep .p-dropdown-panel .p-dropdown-items .p-dropdown-item {
+  padding: 4px 8px;
+}
+
