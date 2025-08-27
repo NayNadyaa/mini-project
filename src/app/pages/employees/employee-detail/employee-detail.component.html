@@ -1,0 +1,18 @@
+<div *ngIf="employee">
+    <div class="flex flex-col gap-3">
+        <div>
+          <span class="block mb-1 text-sm">Username : {{ employee.username }}</span>
+          <span class="block mb-1 text-sm">First Name : {{ employee.firstName }}</span>
+          <span class="block mb-1 text-sm">Last Name : {{ employee.lastName }}</span>
+          <span class="block mb-1 text-sm">Email : {{ employee.email }}</span>
+          <span class="block mb-1 text-sm">Birth Date : {{ employee.birthDate }}</span>
+          <span class="block mb-1 text-sm">Basic Salary : {{ employee.basicSalary | currency:'Rp. ' }}</span>
+          <span class="block mb-1 text-sm">Status : {{ employee.status }}</span>
+          <span class="block mb-1 text-sm">Group : {{ employee.group }}</span>
+          <span class="block mb-1 text-sm">Description : {{ employee.description }}</span>
+        </div>
+    </div>
+    <div class="flex justify-content-end mt-4">
+        <p-button label="Ok" (click)="close()" size="small" />
+    </div>
+</div>

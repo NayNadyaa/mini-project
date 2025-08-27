@@ -5,7 +5,7 @@ export const employeesData = [
     "lastName": "Krueger",
     "email": "kkrueger@example.com",
     "birthDate": "1972-01-27",
-    "basicSalary": 11776.93,
+    "basicSalary": 5000000,
     "status": "Inactive",
     "group": "Support",
     "description": "2020-07-04T22:13:09"
@@ -16,7 +16,7 @@ export const employeesData = [
     "lastName": "Williams",
     "email": "jwilliams@example.com",
     "birthDate": "1967-03-12",
-    "basicSalary": 4642.44,
+    "basicSalary": 4642000,
     "status": "Resigned",
     "group": "Sales",
     "description": "2022-12-27T04:34:35"
@@ -27,7 +27,7 @@ export const employeesData = [
     "lastName": "Ayers",
     "email": "aayers@example.com",
     "birthDate": "1985-01-09",
-    "basicSalary": 8193.07,
+    "basicSalary": 8193000,
     "status": "Probation",
     "group": "Support",
     "description": "2024-08-26T16:45:31"
@@ -38,7 +38,7 @@ export const employeesData = [
     "lastName": "Ewing",
     "email": "bewing@example.com",
     "birthDate": "1987-04-27",
-    "basicSalary": 3024.55,
+    "basicSalary": 3024000,
     "status": "Resigned",
     "group": "IT",
     "description": "2022-04-04T15:27:56"
@@ -49,7 +49,7 @@ export const employeesData = [
     "lastName": "Brown",
     "email": "jbrown@example.com",
     "birthDate": "1989-11-18",
-    "basicSalary": 9598.09,
+    "basicSalary": 9598000,
     "status": "Inactive",
     "group": "Finance",
     "description": "2024-08-11T03:55:10"
@@ -60,7 +60,7 @@ export const employeesData = [
     "lastName": "Mendoza",
     "email": "smendoza@example.com",
     "birthDate": "2005-08-07",
-    "basicSalary": 8196.95,
+    "basicSalary": 8196000,
     "status": "Inactive",
     "group": "Marketing",
     "description": "2022-01-22T17:32:57"
@@ -71,7 +71,7 @@ export const employeesData = [
     "lastName": "Murphy",
     "email": "mmurphy@example.com",
     "birthDate": "1976-06-17",
-    "basicSalary": 14805.16,
+    "basicSalary": 1480500,
     "status": "Resigned",
     "group": "IT",
     "description": "2023-04-08T03:20:16"
@@ -82,7 +82,7 @@ export const employeesData = [
     "lastName": "Peters",
     "email": "tpeters@example.com",
     "birthDate": "1986-06-05",
-    "basicSalary": 13318.19,
+    "basicSalary": 1331800,
     "status": "Probation",
     "group": "Marketing",
     "description": "2025-07-03T08:59:01"
@@ -93,7 +93,7 @@ export const employeesData = [
     "lastName": "Brown",
     "email": "tbrown@example.com",
     "birthDate": "1972-02-09",
-    "basicSalary": 5043.49,
+    "basicSalary": 5043000,
     "status": "Active",
     "group": "Marketing",
     "description": "2022-02-07T00:03:51"
@@ -104,7 +104,7 @@ export const employeesData = [
     "lastName": "Caldwell",
     "email": "kcaldwell@example.com",
     "birthDate": "1969-08-04",
-    "basicSalary": 12821.71,
+    "basicSalary": 12821000,
     "status": "Inactive",
     "group": "HR",
     "description": "2021-07-15T02:34:01"
@@ -115,7 +115,7 @@ export const employeesData = [
     "lastName": "Kline",
     "email": "dkline@example.com",
     "birthDate": "1977-12-09",
-    "basicSalary": 3320.09,
+    "basicSalary": 3320000,
     "status": "Probation",
     "group": "Sales",
     "description": "2022-07-03T05:52:14"
@@ -126,7 +126,7 @@ export const employeesData = [
     "lastName": "Patrick",
     "email": "npatrick@example.com",
     "birthDate": "1992-06-05",
-    "basicSalary": 3457.15,
+    "basicSalary": 3457000,
     "status": "Probation",
     "group": "Sales",
     "description": "2024-11-18T11:35:56"
@@ -137,7 +137,7 @@ export const employeesData = [
     "lastName": "Gonzales",
     "email": "rgonzales@example.com",
     "birthDate": "1993-09-03",
-    "basicSalary": 10387.04,
+    "basicSalary": 10387000,
     "status": "Active",
     "group": "Finance",
     "description": "2023-08-19T17:38:21"
@@ -148,7 +148,7 @@ export const employeesData = [
     "lastName": "Brown",
     "email": "dbrown@example.com",
     "birthDate": "2003-04-27",
-    "basicSalary": 4942.16,
+    "basicSalary": 4942000,
     "status": "Inactive",
     "group": "Marketing",
     "description": "2023-09-02T21:55:12"
@@ -159,7 +159,7 @@ export const employeesData = [
     "lastName": "Snyder",
     "email": "csnyder@example.com",
     "birthDate": "2002-09-27",
-    "basicSalary": 10742.78,
+    "basicSalary": 10742000,
     "status": "Inactive",
     "group": "Marketing",
     "description": "2025-05-07T11:18:42"
@@ -170,7 +170,7 @@ export const employeesData = [
     "lastName": "Davis",
     "email": "ddavis@example.com",
     "birthDate": "2003-01-27",
-    "basicSalary": 3080.05,
+    "basicSalary": 3080000,
     "status": "Inactive",
     "group": "Support",
     "description": "2023-12-29T21:04:44"
@@ -181,7 +181,7 @@ export const employeesData = [
     "lastName": "Berry",
     "email": "aberry@example.com",
     "birthDate": "1989-06-21",
-    "basicSalary": 11874.2,
+    "basicSalary": 8740000,
     "status": "Probation",
     "group": "HR",
     "description": "2020-11-06T15:35:21"
@@ -192,7 +192,7 @@ export const employeesData = [
     "lastName": "Gonzalez",
     "email": "agonzalez@example.com",
     "birthDate": "1971-10-25",
-    "basicSalary": 3350.09,
+    "basicSalary": 3350000,
     "status": "Probation",
     "group": "IT",
     "description": "2023-09-25T04:41:28"
@@ -203,7 +203,7 @@ export const employeesData = [
     "lastName": "Greer",
     "email": "cgreer@example.com",
     "birthDate": "1998-05-29",
-    "basicSalary": 4827.77,
+    "basicSalary": 4827000,
     "status": "Resigned",
     "group": "Support",
     "description": "2025-01-08T06:27:21"
@@ -214,7 +214,7 @@ export const employeesData = [
     "lastName": "Moody",
     "email": "dmoody@example.com",
     "birthDate": "2000-04-10",
-    "basicSalary": 6888.5,
+    "basicSalary": 6888000,
     "status": "Probation",
     "group": "Support",
     "description": "2024-10-28T09:02:12"
@@ -225,7 +225,7 @@ export const employeesData = [
     "lastName": "Walker",
     "email": "bwalker@example.com",
     "birthDate": "2004-11-02",
-    "basicSalary": 13278.19,
+    "basicSalary": 13278000,
     "status": "Probation",
     "group": "Marketing",
     "description": "2020-12-14T05:50:09"
@@ -236,7 +236,7 @@ export const employeesData = [
     "lastName": "Pham",
     "email": "mpham@example.com",
     "birthDate": "1991-03-28",
-    "basicSalary": 4807.06,
+    "basicSalary": 4807000,
     "status": "Probation",
     "group": "Support",
     "description": "2024-09-13T01:34:45"
@@ -247,7 +247,7 @@ export const employeesData = [
     "lastName": "Wong",
     "email": "awong@example.com",
     "birthDate": "1965-10-09",
-    "basicSalary": 13288.93,
+    "basicSalary": 13288000,
     "status": "Inactive",
     "group": "Sales",
     "description": "2020-04-08T11:00:37"
@@ -258,7 +258,7 @@ export const employeesData = [
     "lastName": "Allison",
     "email": "tallison@example.com",
     "birthDate": "2004-08-10",
-    "basicSalary": 13033.35,
+    "basicSalary": 13033000,
     "status": "Active",
     "group": "HR",
     "description": "2025-04-13T03:06:29"
@@ -269,7 +269,7 @@ export const employeesData = [
     "lastName": "Smith",
     "email": "ksmith@example.com",
     "birthDate": "1994-08-25",
-    "basicSalary": 8597.76,
+    "basicSalary": 8597000,
     "status": "Resigned",
     "group": "HR",
     "description": "2022-08-05T07:39:10"
@@ -280,7 +280,7 @@ export const employeesData = [
     "lastName": "Saunders",
     "email": "bsaunders@example.com",
     "birthDate": "1965-06-28",
-    "basicSalary": 5876.96,
+    "basicSalary": 5876000,
     "status": "Inactive",
     "group": "Finance",
     "description": "2024-09-26T05:30:19"
@@ -291,7 +291,7 @@ export const employeesData = [
     "lastName": "Walker",
     "email": "cwalker@example.com",
     "birthDate": "1977-03-25",
-    "basicSalary": 14824.71,
+    "basicSalary": 14824000,
     "status": "Active",
     "group": "HR",
     "description": "2021-07-03T23:17:23"
@@ -302,7 +302,7 @@ export const employeesData = [
     "lastName": "Park",
     "email": "apark@example.com",
     "birthDate": "1965-11-30",
-    "basicSalary": 9557.25,
+    "basicSalary": 9557000,
     "status": "Resigned",
     "group": "Finance",
     "description": "2021-07-21T09:11:04"
@@ -313,7 +313,7 @@ export const employeesData = [
     "lastName": "Newman",
     "email": "gnewman@example.com",
     "birthDate": "1975-02-21",
-    "basicSalary": 3694.59,
+    "basicSalary": 3694000,
     "status": "Probation",
     "group": "IT",
     "description": "2024-11-12T08:58:11"
@@ -324,7 +324,7 @@ export const employeesData = [
     "lastName": "Brady",
     "email": "lbrady@example.com",
     "birthDate": "1971-06-20",
-    "basicSalary": 6256.74,
+    "basicSalary": 6256000,
     "status": "Inactive",
     "group": "Sales",
     "description": "2023-10-13T20:07:11"
@@ -335,7 +335,7 @@ export const employeesData = [
     "lastName": "Davis",
     "email": "ddavis@example.com",
     "birthDate": "1968-06-04",
-    "basicSalary": 13395.91,
+    "basicSalary": 13395000,
     "status": "Resigned",
     "group": "Sales",
     "description": "2021-08-27T18:49:21"
@@ -346,7 +346,7 @@ export const employeesData = [
     "lastName": "Garcia",
     "email": "tgarcia@example.com",
     "birthDate": "1971-06-18",
-    "basicSalary": 12756.29,
+    "basicSalary": 12756000,
     "status": "Inactive",
     "group": "Finance",
     "description": "2025-05-23T13:00:12"
@@ -357,7 +357,7 @@ export const employeesData = [
     "lastName": "Larson",
     "email": "klarson@example.com",
     "birthDate": "1968-09-10",
-    "basicSalary": 3865.48,
+    "basicSalary": 3865000,
     "status": "Resigned",
     "group": "Finance",
     "description": "2023-03-28T04:04:52"
@@ -368,7 +368,7 @@ export const employeesData = [
     "lastName": "Johnson",
     "email": "jjohnson@example.com",
     "birthDate": "1973-06-09",
-    "basicSalary": 3485.64,
+    "basicSalary": 3485000,
     "status": "Active",
     "group": "HR",
     "description": "2020-01-25T04:55:55"
@@ -379,7 +379,7 @@ export const employeesData = [
     "lastName": "Lucas",
     "email": "elucas@example.com",
     "birthDate": "1993-02-09",
-    "basicSalary": 3769.6,
+    "basicSalary": 3769000,
     "status": "Resigned",
     "group": "HR",
     "description": "2020-05-02T01:14:58"
@@ -390,7 +390,7 @@ export const employeesData = [
     "lastName": "Ford",
     "email": "rford@example.com",
     "birthDate": "1977-10-25",
-    "basicSalary": 4334.04,
+    "basicSalary": 4334000,
     "status": "Active",
     "group": "Marketing",
     "description": "2024-05-23T08:43:04"
@@ -401,7 +401,7 @@ export const employeesData = [
     "lastName": "Friedman",
     "email": "cfriedman@example.com",
     "birthDate": "1997-12-04",
-    "basicSalary": 3261.11,
+    "basicSalary": 3261000,
     "status": "Active",
     "group": "Support",
     "description": "2023-08-03T21:42:50"
@@ -412,7 +412,7 @@ export const employeesData = [
     "lastName": "Marshall",
     "email": "tmarshall@example.com",
     "birthDate": "1984-07-22",
-    "basicSalary": 9977.16,
+    "basicSalary": 9977000,
     "status": "Inactive",
     "group": "IT",
     "description": "2025-03-08T04:35:31"
@@ -423,7 +423,7 @@ export const employeesData = [
     "lastName": "Gardner",
     "email": "jgardner@example.com",
     "birthDate": "1972-05-25",
-    "basicSalary": 14565.45,
+    "basicSalary": 14565000,
     "status": "Active",
     "group": "Sales",
     "description": "2023-12-23T21:39:44"
@@ -434,7 +434,7 @@ export const employeesData = [
     "lastName": "Valencia",
     "email": "lvalencia@example.com",
     "birthDate": "1967-08-21",
-    "basicSalary": 6710.43,
+    "basicSalary": 6710000,
     "status": "Probation",
     "group": "Sales",
     "description": "2023-10-21T19:03:15"
@@ -445,7 +445,7 @@ export const employeesData = [
     "lastName": "Mooney",
     "email": "tmooney@example.com",
     "birthDate": "1978-11-27",
-    "basicSalary": 13770.31,
+    "basicSalary": 13770000,
     "status": "Inactive",
     "group": "Sales",
     "description": "2023-03-13T23:26:31"
@@ -456,7 +456,7 @@ export const employeesData = [
     "lastName": "Oliver",
     "email": "joliver@example.com",
     "birthDate": "1995-10-18",
-    "basicSalary": 10817.32,
+    "basicSalary": 10817000,
     "status": "Probation",
     "group": "Sales",
     "description": "2020-03-10T19:20:34"
@@ -467,7 +467,7 @@ export const employeesData = [
     "lastName": "Mccarthy",
     "email": "jmccarthy@example.com",
     "birthDate": "1997-10-30",
-    "basicSalary": 4196.87,
+    "basicSalary": 4196000,
     "status": "Active",
     "group": "Support",
     "description": "2023-10-12T15:28:55"
@@ -478,7 +478,7 @@ export const employeesData = [
     "lastName": "Reed",
     "email": "jreed@example.com",
     "birthDate": "1975-03-30",
-    "basicSalary": 10837.3,
+    "basicSalary": 10837000,
     "status": "Inactive",
     "group": "Marketing",
     "description": "2021-07-09T18:39:31"
@@ -489,7 +489,7 @@ export const employeesData = [
     "lastName": "Schneider",
     "email": "pschneider@example.com",
     "birthDate": "1983-11-20",
-    "basicSalary": 3824.21,
+    "basicSalary": 3824000,
     "status": "Resigned",
     "group": "Sales",
     "description": "2023-08-07T05:11:41"
@@ -500,7 +500,7 @@ export const employeesData = [
     "lastName": "Kim",
     "email": "tkim@example.com",
     "birthDate": "1975-02-28",
-    "basicSalary": 5179.53,
+    "basicSalary": 5179000,
     "status": "Probation",
     "group": "HR",
     "description": "2023-07-21T01:19:59"
@@ -511,7 +511,7 @@ export const employeesData = [
     "lastName": "Brown",
     "email": "sbrown@example.com",
     "birthDate": "1986-07-02",
-    "basicSalary": 13010.84,
+    "basicSalary": 13010000,
     "status": "Inactive",
     "group": "Finance",
     "description": "2023-09-16T19:49:04"
@@ -522,7 +522,7 @@ export const employeesData = [
     "lastName": "Davis",
     "email": "sdavis@example.com",
     "birthDate": "1970-02-07",
-    "basicSalary": 13440.31,
+    "basicSalary": 13440000,
     "status": "Inactive",
     "group": "HR",
     "description": "2020-09-18T18:12:25"
@@ -533,7 +533,7 @@ export const employeesData = [
     "lastName": "Patterson",
     "email": "gpatterson@example.com",
     "birthDate": "1979-02-06",
-    "basicSalary": 12078.35,
+    "basicSalary": 12078000,
     "status": "Inactive",
     "group": "Marketing",
     "description": "2022-10-13T15:39:05"
@@ -544,7 +544,7 @@ export const employeesData = [
     "lastName": "Hall",
     "email": "jhall@example.com",
     "birthDate": "1982-08-09",
-    "basicSalary": 4210.42,
+    "basicSalary": 4210000,
     "status": "Inactive",
     "group": "Support",
     "description": "2022-01-27T03:43:18"
@@ -555,7 +555,7 @@ export const employeesData = [
     "lastName": "Sherman",
     "email": "jsherman@example.com",
     "birthDate": "1978-08-04",
-    "basicSalary": 14283.74,
+    "basicSalary": 14283000,
     "status": "Resigned",
     "group": "Sales",
     "description": "2025-03-08T07:33:25"
@@ -566,7 +566,7 @@ export const employeesData = [
     "lastName": "Gonzalez",
     "email": "pgonzalez@example.com",
     "birthDate": "1986-03-10",
-    "basicSalary": 3828.72,
+    "basicSalary": 3828000,
     "status": "Probation",
     "group": "Finance",
     "description": "2024-01-23T10:39:38"
@@ -577,7 +577,7 @@ export const employeesData = [
     "lastName": "White",
     "email": "lwhite@example.com",
     "birthDate": "1995-10-10",
-    "basicSalary": 13317.68,
+    "basicSalary": 13317000,
     "status": "Active",
     "group": "IT",
     "description": "2023-02-28T00:38:13"
@@ -588,7 +588,7 @@ export const employeesData = [
     "lastName": "Morales",
     "email": "rmorales@example.com",
     "birthDate": "1966-08-21",
-    "basicSalary": 12702.46,
+    "basicSalary": 12702000,
     "status": "Resigned",
     "group": "Finance",
     "description": "2021-01-21T00:50:58"
@@ -599,7 +599,7 @@ export const employeesData = [
     "lastName": "Harper",
     "email": "rharper@example.com",
     "birthDate": "1987-05-21",
-    "basicSalary": 5270.34,
+    "basicSalary": 5270000,
     "status": "Inactive",
     "group": "Support",
     "description": "2021-07-30T08:58:23"
@@ -610,7 +610,7 @@ export const employeesData = [
     "lastName": "Davenport",
     "email": "jdavenport@example.com",
     "birthDate": "1998-01-28",
-    "basicSalary": 5476.8,
+    "basicSalary": 5476000,
     "status": "Inactive",
     "group": "Sales",
     "description": "2024-02-10T01:12:45"
@@ -621,7 +621,7 @@ export const employeesData = [
     "lastName": "Cole",
     "email": "pcole@example.com",
     "birthDate": "1986-12-09",
-    "basicSalary": 3617.03,
+    "basicSalary": 3617000,
     "status": "Inactive",
     "group": "Finance",
     "description": "2021-08-09T13:22:25"
@@ -632,7 +632,7 @@ export const employeesData = [
     "lastName": "Lewis",
     "email": "rlewis@example.com",
     "birthDate": "1990-12-20",
-    "basicSalary": 12727.02,
+    "basicSalary": 12727000,
     "status": "Inactive",
     "group": "Finance",
     "description": "2022-11-29T12:29:02"
@@ -643,7 +643,7 @@ export const employeesData = [
     "lastName": "Villarreal",
     "email": "tvillarreal@example.com",
     "birthDate": "1982-03-22",
-    "basicSalary": 6074.08,
+    "basicSalary": 6074000,
     "status": "Inactive",
     "group": "Finance",
     "description": "2025-07-01T03:51:56"
@@ -654,7 +654,7 @@ export const employeesData = [
     "lastName": "Hernandez",
     "email": "jhernandez@example.com",
     "birthDate": "1984-06-29",
-    "basicSalary": 7679.62,
+    "basicSalary": 7679000,
     "status": "Inactive",
     "group": "Sales",
     "description": "2023-08-18T06:17:27"
@@ -665,7 +665,7 @@ export const employeesData = [
     "lastName": "Duncan",
     "email": "cduncan@example.com",
     "birthDate": "1982-08-03",
-    "basicSalary": 13780.04,
+    "basicSalary": 13780000,
     "status": "Inactive",
     "group": "HR",
     "description": "2021-03-08T04:06:59"
@@ -676,7 +676,7 @@ export const employeesData = [
     "lastName": "Turner",
     "email": "mturner@example.com",
     "birthDate": "1998-09-30",
-    "basicSalary": 4862.05,
+    "basicSalary": 4862000,
     "status": "Active",
     "group": "Marketing",
     "description": "2020-12-01T10:11:36"
@@ -687,7 +687,7 @@ export const employeesData = [
     "lastName": "Jones",
     "email": "mjones@example.com",
     "birthDate": "1995-03-11",
-    "basicSalary": 5146.26,
+    "basicSalary": 5146000,
     "status": "Active",
     "group": "Sales",
     "description": "2021-07-29T01:18:10"
@@ -698,7 +698,7 @@ export const employeesData = [
     "lastName": "Edwards",
     "email": "medwards@example.com",
     "birthDate": "1999-05-19",
-    "basicSalary": 4282.4,
+    "basicSalary": 4282000,
     "status": "Probation",
     "group": "Marketing",
     "description": "2025-04-08T19:39:01"
@@ -709,7 +709,7 @@ export const employeesData = [
     "lastName": "Russell",
     "email": "jrussell@example.com",
     "birthDate": "1989-09-22",
-    "basicSalary": 6023.86,
+    "basicSalary": 6023000,
     "status": "Inactive",
     "group": "Sales",
     "description": "2022-09-18T21:42:17"
@@ -720,7 +720,7 @@ export const employeesData = [
     "lastName": "Gonzalez",
     "email": "dgonzalez@example.com",
     "birthDate": "1976-12-27",
-    "basicSalary": 13102.19,
+    "basicSalary": 13102000,
     "status": "Inactive",
     "group": "Sales",
     "description": "2022-04-07T17:08:22"
@@ -731,7 +731,7 @@ export const employeesData = [
     "lastName": "Martin",
     "email": "cmartin@example.com",
     "birthDate": "2003-04-20",
-    "basicSalary": 14221.05,
+    "basicSalary": 14221000,
     "status": "Probation",
     "group": "Marketing",
     "description": "2023-11-12T18:46:07"
@@ -742,7 +742,7 @@ export const employeesData = [
     "lastName": "Martin",
     "email": "dmartin@example.com",
     "birthDate": "1987-03-22",
-    "basicSalary": 14867.15,
+    "basicSalary": 14867000,
     "status": "Inactive",
     "group": "Sales",
     "description": "2023-04-10T21:16:20"
@@ -753,7 +753,7 @@ export const employeesData = [
     "lastName": "Rodriguez",
     "email": "mrodriguez@example.com",
     "birthDate": "1971-04-19",
-    "basicSalary": 12926.08,
+    "basicSalary": 12926000,
     "status": "Inactive",
     "group": "HR",
     "description": "2022-06-24T19:59:14"
@@ -764,7 +764,7 @@ export const employeesData = [
     "lastName": "Wong",
     "email": "lwong@example.com",
     "birthDate": "1986-12-20",
-    "basicSalary": 12864.69,
+    "basicSalary": 12864000,
     "status": "Resigned",
     "group": "HR",
     "description": "2021-10-14T12:07:03"
@@ -775,7 +775,7 @@ export const employeesData = [
     "lastName": "Adkins",
     "email": "vadkins@example.com",
     "birthDate": "1991-08-09",
-    "basicSalary": 4161.02,
+    "basicSalary": 4161000,
     "status": "Active",
     "group": "IT",
     "description": "2023-11-07T06:36:53"
@@ -786,7 +786,7 @@ export const employeesData = [
     "lastName": "Miller",
     "email": "jmiller@example.com",
     "birthDate": "1965-02-25",
-    "basicSalary": 14354.65,
+    "basicSalary": 14354000,
     "status": "Resigned",
     "group": "IT",
     "description": "2024-08-14T18:14:15"
@@ -797,7 +797,7 @@ export const employeesData = [
     "lastName": "Chang",
     "email": "lchang@example.com",
     "birthDate": "1999-01-05",
-    "basicSalary": 14880.8,
+    "basicSalary": 14880000,
     "status": "Probation",
     "group": "Sales",
     "description": "2022-10-20T22:29:37"
@@ -808,7 +808,7 @@ export const employeesData = [
     "lastName": "Martin",
     "email": "hmartin@example.com",
     "birthDate": "1993-12-29",
-    "basicSalary": 11063.94,
+    "basicSalary": 11063000,
     "status": "Active",
     "group": "Support",
     "description": "2025-01-20T13:07:12"
@@ -819,7 +819,7 @@ export const employeesData = [
     "lastName": "Lawson",
     "email": "wlawson@example.com",
     "birthDate": "1994-05-23",
-    "basicSalary": 3892.52,
+    "basicSalary": 3892000,
     "status": "Resigned",
     "group": "IT",
     "description": "2023-02-14T16:48:56"
@@ -830,7 +830,7 @@ export const employeesData = [
     "lastName": "Cohen",
     "email": "jcohen@example.com",
     "birthDate": "1968-01-22",
-    "basicSalary": 8714.44,
+    "basicSalary": 8714000,
     "status": "Inactive",
     "group": "IT",
     "description": "2025-06-15T13:40:29"
@@ -841,7 +841,7 @@ export const employeesData = [
     "lastName": "Ward",
     "email": "rward@example.com",
     "birthDate": "2004-04-20",
-    "basicSalary": 10111.16,
+    "basicSalary": 10111000,
     "status": "Active",
     "group": "Finance",
     "description": "2021-10-02T10:59:56"
@@ -852,7 +852,7 @@ export const employeesData = [
     "lastName": "Cannon",
     "email": "scannon@example.com",
     "birthDate": "1982-07-02",
-    "basicSalary": 14132.29,
+    "basicSalary": 14132000,
     "status": "Active",
     "group": "Sales",
     "description": "2025-02-08T17:27:18"
@@ -863,7 +863,7 @@ export const employeesData = [
     "lastName": "Hamilton",
     "email": "bhamilton@example.com",
     "birthDate": "2000-10-12",
-    "basicSalary": 11444.31,
+    "basicSalary": 11444000,
     "status": "Active",
     "group": "Sales",
     "description": "2021-03-23T16:24:56"
@@ -874,7 +874,7 @@ export const employeesData = [
     "lastName": "Gonzalez",
     "email": "agonzalez@example.com",
     "birthDate": "1977-06-03",
-    "basicSalary": 13861.18,
+    "basicSalary": 13861000,
     "status": "Probation",
     "group": "Support",
     "description": "2025-06-24T14:21:02"
@@ -885,7 +885,7 @@ export const employeesData = [
     "lastName": "Watson",
     "email": "awatson@example.com",
     "birthDate": "1980-02-28",
-    "basicSalary": 7824.98,
+    "basicSalary": 7824000,
     "status": "Active",
     "group": "Sales",
     "description": "2024-09-13T18:25:30"
@@ -896,7 +896,7 @@ export const employeesData = [
     "lastName": "Johnson",
     "email": "ajohnson@example.com",
     "birthDate": "2001-12-07",
-    "basicSalary": 14427.51,
+    "basicSalary": 14427000,
     "status": "Active",
     "group": "Sales",
     "description": "2021-07-16T16:03:32"
@@ -907,7 +907,7 @@ export const employeesData = [
     "lastName": "Gomez",
     "email": "jgomez@example.com",
     "birthDate": "1973-10-31",
-    "basicSalary": 4460.61,
+    "basicSalary": 4460000,
     "status": "Active",
     "group": "Marketing",
     "description": "2022-09-16T21:20:07"
@@ -918,7 +918,7 @@ export const employeesData = [
     "lastName": "Duncan",
     "email": "cduncan@example.com",
     "birthDate": "2000-08-26",
-    "basicSalary": 9836.85,
+    "basicSalary": 9836000,
     "status": "Active",
     "group": "HR",
     "description": "2023-09-10T19:03:04"
@@ -929,7 +929,7 @@ export const employeesData = [
     "lastName": "Holland",
     "email": "aholland@example.com",
     "birthDate": "1973-06-19",
-    "basicSalary": 14915.02,
+    "basicSalary": 14915000,
     "status": "Inactive",
     "group": "Finance",
     "description": "2024-08-27T13:45:39"
@@ -940,7 +940,7 @@ export const employeesData = [
     "lastName": "Armstrong",
     "email": "sarmstrong@example.com",
     "birthDate": "1970-04-24",
-    "basicSalary": 5391.96,
+    "basicSalary": 5391000,
     "status": "Resigned",
     "group": "Finance",
     "description": "2022-06-08T20:49:10"
@@ -951,7 +951,7 @@ export const employeesData = [
     "lastName": "Payne",
     "email": "mpayne@example.com",
     "birthDate": "1980-03-06",
-    "basicSalary": 7623.17,
+    "basicSalary": 7623000,
     "status": "Probation",
     "group": "Support",
     "description": "2025-08-14T22:19:26"
@@ -962,7 +962,7 @@ export const employeesData = [
     "lastName": "Smith",
     "email": "lsmith@example.com",
     "birthDate": "1975-08-07",
-    "basicSalary": 4723.04,
+    "basicSalary": 4723000,
     "status": "Resigned",
     "group": "Marketing",
     "description": "2023-05-24T03:04:00"
@@ -973,7 +973,7 @@ export const employeesData = [
     "lastName": "Larson",
     "email": "glarson@example.com",
     "birthDate": "1972-06-29",
-    "basicSalary": 10904.12,
+    "basicSalary": 10904000,
     "status": "Resigned",
     "group": "Sales",
     "description": "2020-07-09T01:10:54"
@@ -984,7 +984,7 @@ export const employeesData = [
     "lastName": "Thomas",
     "email": "jthomas@example.com",
     "birthDate": "1997-02-23",
-    "basicSalary": 12841.96,
+    "basicSalary": 12841000,
     "status": "Active",
     "group": "Marketing",
     "description": "2024-12-16T13:48:05"
@@ -995,7 +995,7 @@ export const employeesData = [
     "lastName": "Johnson",
     "email": "mjohnson@example.com",
     "birthDate": "1976-02-09",
-    "basicSalary": 5975.14,
+    "basicSalary": 5975000,
     "status": "Active",
     "group": "Marketing",
     "description": "2021-03-05T23:25:27"
@@ -1006,7 +1006,7 @@ export const employeesData = [
     "lastName": "Garcia",
     "email": "rgarcia@example.com",
     "birthDate": "1997-08-06",
-    "basicSalary": 12551.83,
+    "basicSalary": 12551000,
     "status": "Resigned",
     "group": "Finance",
     "description": "2024-06-08T16:15:59"
@@ -1017,7 +1017,7 @@ export const employeesData = [
     "lastName": "Mathews",
     "email": "jmathews@example.com",
     "birthDate": "1978-04-13",
-    "basicSalary": 4163.57,
+    "basicSalary": 4163000,
     "status": "Active",
     "group": "HR",
     "description": "2020-07-23T03:30:45"
@@ -1028,7 +1028,7 @@ export const employeesData = [
     "lastName": "Fox",
     "email": "rfox@example.com",
     "birthDate": "1985-06-06",
-    "basicSalary": 3509.04,
+    "basicSalary": 3509000,
     "status": "Inactive",
     "group": "Marketing",
     "description": "2020-11-25T02:13:37"
@@ -1039,7 +1039,7 @@ export const employeesData = [
     "lastName": "Vaughn",
     "email": "svaughn@example.com",
     "birthDate": "1985-07-02",
-    "basicSalary": 3554.36,
+    "basicSalary": 3554000,
     "status": "Active",
     "group": "IT",
     "description": "2021-07-03T11:38:39"
@@ -1050,7 +1050,7 @@ export const employeesData = [
     "lastName": "Ross",
     "email": "mross@example.com",
     "birthDate": "2003-11-18",
-    "basicSalary": 5086.34,
+    "basicSalary": 5086000,
     "status": "Resigned",
     "group": "Sales",
     "description": "2021-04-18T07:25:39"
@@ -1061,7 +1061,7 @@ export const employeesData = [
     "lastName": "Hill",
     "email": "khill@example.com",
     "birthDate": "1969-11-14",
-    "basicSalary": 14471.4,
+    "basicSalary": 14471000,
     "status": "Resigned",
     "group": "IT",
     "description": "2020-01-06T17:58:29"
@@ -1072,7 +1072,7 @@ export const employeesData = [
     "lastName": "Hayes",
     "email": "nhayes@example.com",
     "birthDate": "1976-02-05",
-    "basicSalary": 7366.83,
+    "basicSalary": 7366000,
     "status": "Active",
     "group": "Sales",
     "description": "2023-10-16T05:47:14"
@@ -1083,7 +1083,7 @@ export const employeesData = [
     "lastName": "Morrow",
     "email": "dmorrow@example.com",
     "birthDate": "1992-07-22",
-    "basicSalary": 14963.36,
+    "basicSalary": 14963000,
     "status": "Probation",
     "group": "Marketing",
     "description": "2022-08-18T05:43:30"
@@ -1094,7 +1094,7 @@ export const employeesData = [
     "lastName": "Miller",
     "email": "cmiller@example.com",
     "birthDate": "1981-04-26",
-    "basicSalary": 7413.37,
+    "basicSalary": 7413000,
     "status": "Active",
     "group": "Finance",
     "description": "2024-06-14T21:32:45"

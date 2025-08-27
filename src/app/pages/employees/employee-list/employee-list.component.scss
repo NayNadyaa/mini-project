@@ -1,6 +1,11 @@
 .list-container {
     display: flex;
     padding: auto;
+    justify-content: center;
+}
+
+:host ::ng-deep .p-inputtext {
+  padding: 0.52rem 0 0.52rem 2.5rem;
 }
 
 :host ::ng-deep .p-datatable {
