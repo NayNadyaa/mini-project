@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { DropdownModule } from 'primeng/dropdown';
 import { DialogModule } from 'primeng/dialog';
 import { EmployeeDetailComponent } from '../employee-detail/employee-detail.component';
+import { Router } from '@angular/router';
 
 interface Employee {
   username: string;
@@ -52,7 +53,7 @@ export class EmployeeListComponent implements OnInit {
     { label: 'Resigned', value: 'Resigned' }
   ];
   
-  constructor(private messageService: MessageService) {}
+  constructor(private messageService: MessageService, private router: Router) {}
 
   ngOnInit() {
     this.employees = employeesData;
@@ -73,16 +74,20 @@ export class EmployeeListComponent implements OnInit {
   }
 
   applyFilter() {
-    this.filteredEmployees = this.employees.filter(emp => {
+    this.filteredEmployees = this.employees.filter(val => {
       const matchUsername = this.searchUsername
-        ? emp.username.toLowerCase().includes(this.searchUsername.toLowerCase())
+        ? val.username.toLowerCase().includes(this.searchUsername.toLowerCase())
         : true;
 
       const matchStatus = this.selectedStatus
-        ? emp.status === this.selectedStatus
+        ? val.status === this.selectedStatus
         : true;
 
-      return matchUsername && matchStatus; // AND rule
+      return matchUsername && matchStatus;
     });
+  }
+
+  addEmployee() {
+    this.router.navigate(['employees/employee-add']);
   }
 }

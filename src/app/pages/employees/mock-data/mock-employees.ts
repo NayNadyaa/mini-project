@@ -7,7 +7,7 @@ export const employeesData = [
     "birthDate": "1972-01-27",
     "basicSalary": 5000000,
     "status": "Inactive",
-    "group": "Support",
+    "group": "IT",
     "description": "2020-07-04T22:13:09"
   },
   {
@@ -29,7 +29,7 @@ export const employeesData = [
     "birthDate": "1985-01-09",
     "basicSalary": 8193000,
     "status": "Probation",
-    "group": "Support",
+    "group": "IT",
     "description": "2024-08-26T16:45:31"
   },
   {
@@ -172,7 +172,7 @@ export const employeesData = [
     "birthDate": "2003-01-27",
     "basicSalary": 3080000,
     "status": "Inactive",
-    "group": "Support",
+    "group": "IT",
     "description": "2023-12-29T21:04:44"
   },
   {
@@ -205,7 +205,7 @@ export const employeesData = [
     "birthDate": "1998-05-29",
     "basicSalary": 4827000,
     "status": "Resigned",
-    "group": "Support",
+    "group": "IT",
     "description": "2025-01-08T06:27:21"
   },
   {
@@ -216,7 +216,7 @@ export const employeesData = [
     "birthDate": "2000-04-10",
     "basicSalary": 6888000,
     "status": "Probation",
-    "group": "Support",
+    "group": "IT",
     "description": "2024-10-28T09:02:12"
   },
   {
@@ -238,7 +238,7 @@ export const employeesData = [
     "birthDate": "1991-03-28",
     "basicSalary": 4807000,
     "status": "Probation",
-    "group": "Support",
+    "group": "IT",
     "description": "2024-09-13T01:34:45"
   },
   {
@@ -403,7 +403,7 @@ export const employeesData = [
     "birthDate": "1997-12-04",
     "basicSalary": 3261000,
     "status": "Active",
-    "group": "Support",
+    "group": "IT",
     "description": "2023-08-03T21:42:50"
   },
   {
@@ -469,7 +469,7 @@ export const employeesData = [
     "birthDate": "1997-10-30",
     "basicSalary": 4196000,
     "status": "Active",
-    "group": "Support",
+    "group": "IT",
     "description": "2023-10-12T15:28:55"
   },
   {
@@ -546,7 +546,7 @@ export const employeesData = [
     "birthDate": "1982-08-09",
     "basicSalary": 4210000,
     "status": "Inactive",
-    "group": "Support",
+    "group": "IT",
     "description": "2022-01-27T03:43:18"
   },
   {
@@ -601,7 +601,7 @@ export const employeesData = [
     "birthDate": "1987-05-21",
     "basicSalary": 5270000,
     "status": "Inactive",
-    "group": "Support",
+    "group": "IT",
     "description": "2021-07-30T08:58:23"
   },
   {
@@ -810,7 +810,7 @@ export const employeesData = [
     "birthDate": "1993-12-29",
     "basicSalary": 11063000,
     "status": "Active",
-    "group": "Support",
+    "group": "IT",
     "description": "2025-01-20T13:07:12"
   },
   {
@@ -876,7 +876,7 @@ export const employeesData = [
     "birthDate": "1977-06-03",
     "basicSalary": 13861000,
     "status": "Probation",
-    "group": "Support",
+    "group": "IT",
     "description": "2025-06-24T14:21:02"
   },
   {
@@ -953,7 +953,7 @@ export const employeesData = [
     "birthDate": "1980-03-06",
     "basicSalary": 7623000,
     "status": "Probation",
-    "group": "Support",
+    "group": "IT",
     "description": "2025-08-14T22:19:26"
   },
   {

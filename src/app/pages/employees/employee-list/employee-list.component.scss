@@ -1,7 +1,26 @@
 .list-container {
-    display: flex;
-    padding: auto;
-    justify-content: center;
+  width: 100%;
+  padding: 1rem;
+  overflow-x: auto;
+
+  table {
+    width: 100%;
+    th, td {
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+      white-space: nowrap;
+    }
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .list-container {
+    overflow-x: auto;
+    table {
+      min-width: 600px;
+    }
+  }
 }
 
 :host ::ng-deep .p-inputtext {

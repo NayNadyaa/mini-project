@@ -33,14 +33,14 @@
                         <p-button label="Search" (onClick)="applyFilter()" size="small" raised />
                     </div>
 
-                    <p-button label="Add employee" size="small" raised />
+                    <p-button label="Add employee" size="small" raised (onClick)="addEmployee()"/>
                 </div>
             </div>
         </ng-template>
 
         <ng-template pTemplate="header">
         <tr>
-            <th pSortableColumn="username" style="min-width: 10rem">
+            <th pSortableColumn="username" style="min-width: 8rem">
                 <div class="flex items-center gap-2">
                     Username
                     <p-sortIcon field="username" />
@@ -64,7 +64,7 @@
                     <p-sortIcon field="email" />
                 </div>
             </th>
-            <th pSortableColumn="birthDate" style="min-width: 10rem">
+            <th pSortableColumn="birthDate" style="min-width: 8rem">
                 <div class="flex items-center gap-2">
                     Birth Date
                     <p-sortIcon field="birthDate" />

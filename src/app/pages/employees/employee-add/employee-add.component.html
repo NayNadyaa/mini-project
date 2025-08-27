@@ -1,0 +1,90 @@
+<div class="form-container">
+    <p-toast />
+    <p-card class="form-card">
+
+    
+  <h2 class="mb-5">Add Employee</h2>
+
+  <form [formGroup]="employeeForm" (ngSubmit)="onSave()" class="formGrid grid">
+
+    <div class="field col-12 md:col-6">
+        <label class="required">Username</label>
+        <input class="w-full" pInputText formControlName="username" placeholder="Username" />
+        <small *ngIf="employeeForm.get('username')?.invalid && employeeForm.get('username')?.touched" class="p-error">
+            Username is required
+        </small>
+    </div>
+        
+    <div class="field col-12 md:col-6">
+        <label class="required">Email</label>
+        <input class="w-full" pInputText formControlName="email" placeholder="Email" />
+        <small *ngIf="employeeForm.get('email')?.invalid && employeeForm.get('email')?.touched" class="p-error">
+            Valid Email is required
+        </small>
+    </div>
+
+    <div class="field col-12 md:col-6">
+        <label class="required">First Name</label>
+        <input class="w-full" pInputText formControlName="firstName" placeholder="First Name" />
+        <small *ngIf="employeeForm.get('firstName')?.invalid && employeeForm.get('firstName')?.touched" class="p-error">
+            First Name is required
+        </small>
+    </div>
+
+    <div class="field col-12 md:col-6">
+        <label class="required">Last Name</label>
+        <input class="w-full" pInputText formControlName="lastName" placeholder="Last Name" />
+        <small *ngIf="employeeForm.get('lastName')?.invalid && employeeForm.get('lastName')?.touched" class="p-error">
+            Last Name is required
+        </small>
+    </div>
+    
+    <div class="field col-12 md:col-6">
+        <label class="required">Birth Date</label>
+        <p-calendar styleClass="custom-calendar" [maxDate]="maxDate" [showIcon]="true" [iconDisplay]="'input'" 
+            formControlName="birthDate" placeholder="dd/mm/yyyy" />
+        <small *ngIf="employeeForm.get('birthDate')?.invalid && employeeForm.get('birthDate')?.touched" class="p-error">
+            Birth Date is required
+        </small>
+    </div>
+
+    <div class="field col-12 md:col-6">
+        <label class="required">Basic Salary</label>
+        <input type="number" class="w-full" pInputText formControlName="basicSalary" placeholder="Basic Salary" />
+        <small *ngIf="employeeForm.get('basicSalary')?.invalid && employeeForm.get('basicSalary')?.touched" class="p-error">
+            Basic Salary is required
+        </small>
+    </div>
+
+    <div class="field col-12 md:col-6">
+        <label class="required">Status</label>
+        <p-dropdown [options]="statusOptions" formControlName="status" placeholder="Select Status"></p-dropdown>
+        <small *ngIf="employeeForm.get('status')?.invalid && employeeForm.get('status')?.touched" class="p-error">
+            Status is required
+        </small>
+    </div>
+
+    <div class="field col-12 md:col-6">
+        <label class="required">Group</label>
+        <p-dropdown [options]="groupOptions" formControlName="group" placeholder="Select Group"></p-dropdown>
+        <small *ngIf="employeeForm.get('group')?.invalid && employeeForm.get('group')?.touched" class="p-error">
+            Group is required
+        </small>
+    </div>
+
+    <div class="field col-12">
+        <label class="required">Description</label>
+        <textarea class="w-full p-2" pInputTextarea style="opacity: 0.5; border-radius: 0.3rem;" rows="5" formControlName="description"></textarea>
+        <small *ngIf="employeeForm.get('description')?.invalid && employeeForm.get('description')?.touched" class="p-error">
+            Description is required
+        </small>
+    </div>
+
+    <div class="col-12 flex justify-content-end gap-2 mt-3">
+        <p-button label="Save" icon="pi pi-save" type="submit" [disabled]="employeeForm.invalid" size="small"></p-button>
+        <p-button label="Cancel" icon="pi pi-times" severity="secondary" (onClick)="onCancel()" size="small"></p-button>
+    </div>
+    
+  </form>
+  </p-card>
+</div>
