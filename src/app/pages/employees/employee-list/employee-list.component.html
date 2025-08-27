@@ -3,33 +3,98 @@
     <div class="card">
 
     <p-table
-        [value]="employees"
+        [value]="filteredEmployees"
         [paginator]="true"
         [rows]="5"
         [rowsPerPageOptions]="rowsPerPageOptions"
-        responsiveLayout="scroll"
+        [scrollable]="true" 
+        scrollHeight="500px"
         size="small"
         [tableStyle]="{'min-width':'50rem'}"
+        [globalFilterFields]="['username', 'firstName', 'lastName', 'status']"
     >
         <ng-template pTemplate="caption">
             <div class="flex items-center justify-content-between">
                 <span class="text-xl font-bold mt-2">Employee List</span>
-                <p-button label="Add employee" size="small" raised />
+                <div class="flex gap-3">
+                    <div class="flex flex-col">
+                        <input pInputText type="text" [(ngModel)]="searchUsername" placeholder="Search username" />
+                    </div>
+                    <div class="flex flex-col">
+                        <p-dropdown 
+                            [options]="statusOptions" 
+                            [(ngModel)]="selectedStatus" 
+                            placeholder="Select status" 
+                            [style]="{'width':'12rem'}">
+                        </p-dropdown>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <p-button label="Search" (onClick)="applyFilter()" size="small" raised />
+                    </div>
+
+                    <p-button label="Add employee" size="small" raised (onClick)="addEmployee()"/>
+                </div>
             </div>
         </ng-template>
 
         <ng-template pTemplate="header">
         <tr>
-            <th>Username</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Email</th>
-            <th>Birth Date</th>
-            <th>Basic Salary</th>
-            <th>Status</th>
-            <th>Group</th>
-            <th>Description</th>
-            <th>Action</th>
+            <th pSortableColumn="username" style="min-width: 8rem">
+                <div class="flex items-center gap-2">
+                    Username
+                    <p-sortIcon field="username" />
+                </div>
+            </th>
+            <th pSortableColumn="firstName" style="min-width: 10rem">
+                <div class="flex items-center gap-2">
+                    First Name
+                    <p-sortIcon field="firstName" />
+                </div>
+            </th>
+            <th pSortableColumn="lastName" style="min-width: 10rem">
+                <div class="flex items-center gap-2">
+                    Last Name
+                    <p-sortIcon field="lastName" />
+                </div>
+            </th>
+            <th pSortableColumn="email" style="min-width: 10rem">
+                <div class="flex items-center gap-2">
+                    Email
+                    <p-sortIcon field="email" />
+                </div>
+            </th>
+            <th pSortableColumn="birthDate" style="min-width: 8rem">
+                <div class="flex items-center gap-2">
+                    Birth Date
+                    <p-sortIcon field="birthDate" />
+                </div>
+            </th>
+            <th pSortableColumn="basicSalary" style="min-width: 10rem">
+                <div class="flex items-center gap-2">
+                    Basic Salary
+                    <p-sortIcon field="basicSalary" />
+                </div>
+            </th>
+            <th pSortableColumn="status" style="min-width: 5rem">
+                <div class="flex items-center gap-2">
+                    Status
+                    <p-sortIcon field="status" />
+                </div>
+            </th>
+            <th pSortableColumn="group" style="min-width: 5rem">
+                <div class="flex items-center gap-2">
+                    Group
+                    <p-sortIcon field="group" />
+                </div>
+            </th>
+            <th pSortableColumn="description" style="min-width: 10rem">
+                <div class="flex items-center gap-2">
+                    Description
+                    <p-sortIcon field="description" />
+                </div>
+            </th>
+            <th style="min-width: 12rem;">Action</th>
         </tr>
         </ng-template>
         <ng-template pTemplate="body" let-employee>
@@ -39,16 +104,26 @@
             <td>{{ employee.lastName }}</td>
             <td>{{ employee.email }}</td>
             <td>{{ employee.birthDate | date }}</td>
-            <td>{{ employee.basicSalary | currency:'USD' }}</td>
+            <td>{{ employee.basicSalary | currency:'Rp' }}</td>
             <td>{{ employee.status }}</td>
             <td>{{ employee.group }}</td>
             <td>{{ employee.description }}</td>
             <td>
-                <p-button class="mr-1" icon="pi pi-pencil" (click)="editData(employee)" rounded />
-                <p-button icon="pi pi-trash" (click)="deleteData(employee)" rounded />
+                <p-button class="mr-1" [icon]="'pi pi-eye'" (click)="viewData(employee)" rounded />
+                <p-button class="mr-1" [icon]="'pi pi-pencil'" (click)="editData(employee)" rounded />
+                <p-button [icon]="'pi pi-trash'" (click)="deleteData(employee)" rounded />
             </td>
         </tr>
         </ng-template>
     </p-table>
     </div>
 </div>
+
+<!-- Dialog -->
+<p-dialog header="Detail Employee"
+    [(visible)]="visible"
+    [modal]="true"
+    [style]="{width: '30rem'}"
+>
+  <app-employee-detail [employee]="selectedEmployee" (closeDialog)="visible=false"></app-employee-detail>
+</p-dialog>
