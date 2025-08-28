@@ -2,6 +2,7 @@
   width: 100%;
   padding: 1rem;
   overflow-x: auto;
+  height: 100%;
 
   table {
     width: 100%;
@@ -24,11 +25,22 @@
 }
 
 :host ::ng-deep .p-inputtext {
-  padding: 0.52rem 0 0.52rem 2.5rem;
+  padding: 0.5rem 0 0.5rem 1rem;
+  font-size: 13px;
 }
 
-:host ::ng-deep .p-datatable {
+:host ::ng-deep .p-datatable,
+:host ::ng-deep .p-button {
   font-size: 13px;  
+}
+
+:host ::ng-deep .p-dropdown {
+  padding: 0.15rem 0;
+}
+
+:host ::ng-deep .p-button.icon-only {
+  height: 2rem;
+  width: 2rem;
 }
 
 :host ::ng-deep .p-datatable .p-datatable-thead > tr > th {
