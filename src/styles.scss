@@ -7,3 +7,14 @@
 .pi {
   font-family: 'primeicons' !important;
 }
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
