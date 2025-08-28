@@ -4,24 +4,30 @@ import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { FormsModule } from '@angular/forms';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { DropdownModule } from 'primeng/dropdown';
 import { MessageService } from 'primeng/api';
 import { ToastModule } from 'primeng/toast';
 import { CardModule } from 'primeng/card';
 import { CalendarModule } from 'primeng/calendar';
+import { employeesData } from '../mock-data/mock-employees';
+import { InputNumberModule } from "primeng/inputnumber";
 
 @Component({
-  selector: 'app-employee-add',
+  selector: 'app-employee-form',
   standalone: true,
-  imports: [CommonModule, ButtonModule, InputTextModule, FormsModule, ReactiveFormsModule, DropdownModule, ToastModule, CardModule, CalendarModule],
-  templateUrl: './employee-add.component.html',
-  styleUrl: './employee-add.component.scss',
+  imports: [CommonModule, ButtonModule, InputTextModule, FormsModule, ReactiveFormsModule, DropdownModule, ToastModule, CardModule, CalendarModule, InputNumberModule],
+  templateUrl: './employee-form.component.html',
+  styleUrl: './employee-form.component.scss',
   providers: [MessageService]
 })
-export class EmployeeAddComponent {
+export class EmployeeFormComponent {
   employeeForm!: FormGroup;
   maxDate: Date | undefined;
+  employeeData!: any;
+  idData = null;
+  isDetailMode = false;
+  title = '';
 
   statusOptions = [
     { label: 'Active', value: 'Active' },
@@ -36,9 +42,14 @@ export class EmployeeAddComponent {
     { label: 'Sales', value: 'Sales' },
     { label: 'Marketing', value: 'Marketing' },
     { label: 'IT', value: 'IT' },
+    { label: 'Support', value: 'Support' },
+    { label: 'Developer', value: 'Developer' },
+    { label: 'BA', value: 'BA' },
+    { label: 'QA', value: 'QA' },
+    { label: 'SA', value: 'SA' },
   ];
 
-  constructor(private form: FormBuilder, private router: Router, private messageService: MessageService) {
+  constructor(private form: FormBuilder, private router: Router, private messageService: MessageService, private route: ActivatedRoute) {
     this.employeeForm = this.form.group({
       username: ['', Validators.required],
       firstName: ['', Validators.required],
@@ -54,6 +65,25 @@ export class EmployeeAddComponent {
 
   ngOnInit() {
     this.maxDate = new Date();
+
+    this.route.params.subscribe(params => {
+      this.idData = params['id'];
+    });
+
+    if (this.idData) {
+      this.isDetailMode = true;
+      this.employeeForm.disable();
+
+      this.employeeData = employeesData.find(val => this.idData === String(val.id))
+      if (this.employeeData) {
+        this.employeeForm.patchValue({ 
+          ...this.employeeData,
+          birthDate: new Date(this.employeeData?.birthDate),
+        });
+      }
+    }
+
+    this.title = this.idData ? 'Detail Employee' : 'Add Employee';
   }
 
   onSave() {

@@ -13,7 +13,8 @@
 }
 
 :host ::ng-deep .p-dropdown,
-:host ::ng-deep .p-calendar {
+:host ::ng-deep .p-calendar,
+:host ::ng-deep .p-inputnumber {
   width: 100% !important;
 }
 

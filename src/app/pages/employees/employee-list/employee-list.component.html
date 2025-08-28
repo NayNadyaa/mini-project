@@ -1,8 +1,10 @@
+<app-navbar />
 <div class="list-container">
     <p-toast />
     <div class="card">
 
     <p-table
+        #empTable
         [value]="filteredEmployees"
         [paginator]="true"
         [rows]="5"
@@ -30,16 +32,17 @@
                     </div>
 
                     <div class="flex gap-2">
-                        <p-button label="Search" (onClick)="applyFilter()" size="small" raised />
+                        <p-button [icon]="'pi pi-search'" label="Search" (onClick)="applyFilter()" size="small" raised />
                     </div>
 
-                    <p-button label="Add employee" size="small" raised (onClick)="addEmployee()"/>
+                    <p-button [icon]="'pi pi-plus'" label="Add employee" size="small" raised (onClick)="addEmployee()"/>
                 </div>
             </div>
         </ng-template>
 
         <ng-template pTemplate="header">
         <tr>
+            <th style="min-width: 2rem;">No</th>
             <th pSortableColumn="username" style="min-width: 8rem">
                 <div class="flex items-center gap-2">
                     Username
@@ -94,11 +97,12 @@
                     <p-sortIcon field="description" />
                 </div>
             </th>
-            <th style="min-width: 12rem;">Action</th>
+            <th style="min-width: 10rem;">Action</th>
         </tr>
         </ng-template>
-        <ng-template pTemplate="body" let-employee>
+        <ng-template pTemplate="body" let-employee let-i="rowIndex">
         <tr>
+            <td>{{ i + 1 + (currentPage * rows) }}</td>
             <td>{{ employee.username }}</td>
             <td>{{ employee.firstName }}</td>
             <td>{{ employee.lastName }}</td>
@@ -109,9 +113,9 @@
             <td>{{ employee.group }}</td>
             <td>{{ employee.description }}</td>
             <td>
-                <p-button class="mr-1" [icon]="'pi pi-eye'" (click)="viewData(employee)" rounded />
-                <p-button class="mr-1" [icon]="'pi pi-pencil'" (click)="editData(employee)" rounded />
-                <p-button [icon]="'pi pi-trash'" (click)="deleteData(employee)" rounded />
+                <p-button class="mr-1" styleClass="icon-only" [icon]="'pi pi-eye'" (click)="viewData(employee)" rounded outlined />
+                <p-button class="mr-1" styleClass="icon-only" [icon]="'pi pi-pencil'" (click)="editData(employee)" rounded outlined />
+                <p-button styleClass="icon-only" [icon]="'pi pi-trash'" (click)="deleteData(employee)" rounded outlined />
             </td>
         </tr>
         </ng-template>

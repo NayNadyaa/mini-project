@@ -3,7 +3,7 @@
     <p-card class="form-card">
 
     
-  <h2 class="mb-5">Add Employee</h2>
+  <h2 class="mb-5">{{ title }}</h2>
 
   <form [formGroup]="employeeForm" (ngSubmit)="onSave()" class="formGrid grid">
 
@@ -50,7 +50,7 @@
 
     <div class="field col-12 md:col-6">
         <label class="required">Basic Salary</label>
-        <input type="number" class="w-full" pInputText formControlName="basicSalary" placeholder="Basic Salary" />
+        <p-inputNumber type="number" class="w-full" mode="currency" currency="IDR" formControlName="basicSalary" placeholder="Basic Salary" />
         <small *ngIf="employeeForm.get('basicSalary')?.invalid && employeeForm.get('basicSalary')?.touched" class="p-error">
             Basic Salary is required
         </small>
@@ -66,7 +66,8 @@
 
     <div class="field col-12 md:col-6">
         <label class="required">Group</label>
-        <p-dropdown [options]="groupOptions" formControlName="group" placeholder="Select Group"></p-dropdown>
+        <p-dropdown [options]="groupOptions" formControlName="group" [filter]="true" filterBy="label" 
+            [showClear]="true" placeholder="Select Group"></p-dropdown>
         <small *ngIf="employeeForm.get('group')?.invalid && employeeForm.get('group')?.touched" class="p-error">
             Group is required
         </small>
@@ -80,9 +81,13 @@
         </small>
     </div>
 
-    <div class="col-12 flex justify-content-end gap-2 mt-3">
+    <div *ngIf="!isDetailMode" class="col-12 flex justify-content-end gap-2 mt-3">
         <p-button label="Save" icon="pi pi-save" type="submit" [disabled]="employeeForm.invalid" size="small"></p-button>
         <p-button label="Cancel" icon="pi pi-times" severity="secondary" (onClick)="onCancel()" size="small"></p-button>
+    </div>
+
+    <div *ngIf="isDetailMode" class="col-12 flex justify-content-end mt-3">
+        <p-button label="Ok" icon="pi pi-check" (onClick)="onCancel()" size="small"></p-button>
     </div>
     
   </form>

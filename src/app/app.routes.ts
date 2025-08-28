@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import { LoginComponent } from './pages/login/login.component';
 import { EmployeeListComponent } from './pages/employees/employee-list/employee-list.component';
-import { EmployeeAddComponent } from './pages/employees/employee-add/employee-add.component';
+import { EmployeeFormComponent } from './pages/employees/employee-form/employee-form.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -10,7 +10,8 @@ export const routes: Routes = [
         children: [
             { path: '', redirectTo: 'employee-list', pathMatch: 'full' },
             { path: 'employee-list', component: EmployeeListComponent },
-            { path: 'employee-add', component: EmployeeAddComponent },
+            { path: 'employee-form', component: EmployeeFormComponent },
+            { path: 'employee-form/:id', component: EmployeeFormComponent },
         ]
      },
 ];
