@@ -74,8 +74,9 @@ export class EmployeeFormComponent {
     if (this.idData) {
       this.isDetailMode = true;
       this.employeeForm.disable();
+      const tempEmployeeData = JSON.parse(localStorage.getItem('employees') || '[]');
 
-      this.employeeData = employeesData.find(val => this.idData === String(val.id))
+      this.employeeData = tempEmployeeData.find((val: any) => this.idData === String(val.id))
       if (this.employeeData) {
         this.employeeForm.patchValue({ 
           ...this.employeeData,

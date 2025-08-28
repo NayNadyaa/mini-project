@@ -2,13 +2,13 @@
   <p-card header="Login" styleClass="login-card">
     <div class="p-fluid">
       <div class="p-field mb-4">
-        <label for="username">Username</label>
-        <input id="username" type="text" pInputText [(ngModel)]="username" placeholder="Enter username" />
+        <input id="username" type="text" pInputText [(ngModel)]="username" placeholder="Enter username" 
+          (keydown.enter)="login()" />
       </div>
 
       <div class="p-field mb-4">
-        <label for="password">Password</label>
-        <p-password [(ngModel)]="password" [feedback]="false" toggleMask inputId="password" placeholder="Enter password"></p-password>
+        <p-password [(ngModel)]="password" [feedback]="false" toggleMask inputId="password" placeholder="Enter password"
+          (keydown.enter)="login()"></p-password>
       </div>
 
       <div class="flex justify-content-end mt-2">
