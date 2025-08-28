@@ -62,7 +62,13 @@ export class EmployeeListComponent implements OnInit {
   constructor(private messageService: MessageService, private router: Router) {}
 
   ngOnInit() {
-    this.employees = employeesData;
+    let storedEmployees = JSON.parse(localStorage.getItem('employees') || '[]');
+    if (storedEmployees.length === 0) {
+      localStorage.setItem('employees', JSON.stringify(employeesData));
+      storedEmployees = employeesData;
+    }
+
+    this.employees = storedEmployees;
     this.filteredEmployees = [...this.employees];
 
     this.searchUsername = sessionStorage.getItem('searchUsername') || '';

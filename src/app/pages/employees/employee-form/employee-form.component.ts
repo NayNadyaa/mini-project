@@ -28,6 +28,7 @@ export class EmployeeFormComponent {
   idData = null;
   isDetailMode = false;
   title = '';
+  loading = false;
 
   statusOptions = [
     { label: 'Active', value: 'Active' },
@@ -56,7 +57,7 @@ export class EmployeeFormComponent {
       lastName: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       birthDate: ['', Validators.required],
-      basicSalary: ['', Validators.required],
+      basicSalary: [0, Validators.required],
       status: ['', Validators.required],
       group: ['', Validators.required],
       description: ['', Validators.required]
@@ -88,8 +89,21 @@ export class EmployeeFormComponent {
 
   onSave() {
     if (this.employeeForm.valid) {
-      this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Success Add Employee' });
-      console.log('Form Data:', this.employeeForm.value);
+      this.loading = true;
+      const employees = JSON.parse(localStorage.getItem('employees') || '[]');
+      const newEmployee = {
+        ...this.employeeForm.value,
+        id: employees?.length + 1
+      };
+
+      employees.unshift(newEmployee);
+      localStorage.setItem('employees', JSON.stringify(employees));
+
+      this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Employee Added', life: 1500 });
+      setTimeout(() => {
+        this.loading = false;
+        this.router.navigate(['/employees']);
+      }, 1500);
     }
   }
 
