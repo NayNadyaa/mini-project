@@ -9,6 +9,12 @@ The project runs on Node.js version 20.18.3 and npm version 10.8.2.
 After clone the repo run `npm install`
 And then run `npm start` or `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
+## User login
+
+user: admin, pass: 1234
+user: emp1, pass: 4567
+user: emp2, pass: 7890
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
