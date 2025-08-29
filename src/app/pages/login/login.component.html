@@ -11,6 +11,12 @@
           (keydown.enter)="login()"></p-password>
       </div>
 
+      <p-blockUI [blocked]="loading">
+        <div class="card flex justify-content-center">
+          <p-progressSpinner ariaLabel="loading" />
+        </div>
+      </p-blockUI>
+      
       <div class="flex justify-content-end mt-2">
         <button pButton type="button" label="Login" class="p-button-rounded p-button-primary" (click)="login()"></button>
       </div>
