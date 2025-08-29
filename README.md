@@ -1,10 +1,13 @@
 # MiniProject
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
+It uses the PrimeNG v17 UI library.  
+The project runs on Node.js version 20.18.3 and npm version 10.8.2.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+After clone the repo run `npm install`
+And then run `npm start` or `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
