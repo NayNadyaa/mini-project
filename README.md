@@ -15,6 +15,11 @@ user: admin, pass: 1234
 user: emp1, pass: 4567
 user: emp2, pass: 7890
 
+## Documentation record
+
+Application documentation
+https://jam.dev/c/efea7e50-88bf-4732-818e-a5e5acce12b9
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
