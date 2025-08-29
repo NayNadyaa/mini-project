@@ -84,7 +84,8 @@
     <div *ngIf="!isDetailMode" class="col-12 flex justify-content-end gap-2 mt-3">
         <p-button label="Save" icon="pi pi-save" type="submit" [loading]="loading" 
             [disabled]="employeeForm.invalid || loading" size="small"></p-button>
-        <p-button label="Cancel" icon="pi pi-times" severity="secondary" (onClick)="onCancel()" size="small"></p-button>
+        <p-button label="Cancel" icon="pi pi-times"[loading]="loading" [disabled]="loading" 
+            severity="secondary" (onClick)="onCancel()" size="small"></p-button>
     </div>
 
     <div *ngIf="isDetailMode" class="col-12 flex justify-content-end mt-3">

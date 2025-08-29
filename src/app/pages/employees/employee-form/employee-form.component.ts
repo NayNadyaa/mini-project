@@ -10,7 +10,7 @@ import { MessageService } from 'primeng/api';
 import { ToastModule } from 'primeng/toast';
 import { CardModule } from 'primeng/card';
 import { CalendarModule } from 'primeng/calendar';
-import { employeesData } from '../mock-data/mock-employees';
+import { employeesData } from '../../mock-data/mock-employees';
 import { InputNumberModule } from "primeng/inputnumber";
 
 @Component({
