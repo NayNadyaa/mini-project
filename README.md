@@ -1,4 +1,4 @@
-# MiniProject
+# MiniProject - Nadya Hadiyanti
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
 It uses the PrimeNG v17 UI library.  
